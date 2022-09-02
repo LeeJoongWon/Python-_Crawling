@@ -12,13 +12,13 @@ from bs4 import BeautifulSoup
 
 (HTML 및 XML 문서 를 구문 분석하기위한 Python 패키지입니다)
 
-- 설치는 터미널에서(우분투 리눅스 기준) pip3 install beautifulsoup4
+설치는 터미널에서(우분투 리눅스 기준) pip3 install beautifulsoup4
 
 import urllib.request as req
 
 ->urllib.request는 URL을 가져오기 위한 파이썬 모듈입니다
 
-- as req 는 urllib.request모듈을 대신할 이름을 지정하는것 입니다 (편의성을 위해)
+as req 는 urllib.request모듈을 대신할 이름을 지정하는것 입니다 (편의성을 위해)
 
 (req는 사용자가 마음대로 이름을 바꿔도 됩니다)
 
