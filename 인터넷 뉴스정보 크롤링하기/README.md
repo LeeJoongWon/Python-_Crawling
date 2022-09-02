@@ -6,7 +6,7 @@ beautifulsoup의 select을 사용합니다 - 리스트형 (다량의 자료)
 
 # 설명
 
-from bs4 import BeautifulSoup
+- from bs4 import BeautifulSoup
 
 -> BeautifulSoup 라이브러리를 사용합니다
 
@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 
 설치는 터미널에서(우분투 리눅스 기준) pip3 install beautifulsoup4
 
-import urllib.request as req
+- import urllib.request as req
 
 ->urllib.request는 URL을 가져오기 위한 파이썬 모듈입니다
 
@@ -26,19 +26,19 @@ url에 접속할 http주소를 넣습니다 (네이버에서 코로나에 대해
 
 ----------------------------------------------------------------------------------------------------
 
-res = req.urlopen(url)
+- res = req.urlopen(url)
 
 -> urllib.request 모듈의 urlopen기능으로 url(네이버 뉴스)을 열고 res에 넣습니다
 
 ----------------------------------------------------------------------------------------------------
 
-soup = BeautifulSoup(res, "html.parser")
+- soup = BeautifulSoup(res, "html.parser")
 
 -> BeautifulSoup라이브러리로 res에 담겨있는 url(네이버 뉴스)을 html.parser으로 구조를 분석하고 soup에 넣습니다
 
 ----------------------------------------------------------------------------------------------------
 
-new_list = soup.select("a.news_tit")
+- new_list = soup.select("a.news_tit")
 
 -> 위에서 분석한 정보가 담겨있는 soup에 select 기능으로 "a.news_tit"안에있는 정보를 추출하고 new_list에 정보를 넣습니다
 
@@ -50,7 +50,7 @@ select("태그")는 페이지내에 있는 모든 태그 를 가져오는 리스
 
 ----------------------------------------------------------------------------------------------------
 
-for a in new_list:
+- for a in new_list:
 
 -> new_list(위에서 얻는 정보들)에 들어있는 정보만큼 반복해라 입니다
 
