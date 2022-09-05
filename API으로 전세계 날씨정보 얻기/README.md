@@ -24,8 +24,8 @@ api = "http://api.openweathermap.org/data/2.5/weather?q={city}&APPID={key}"
 
 -> api에는 api를 제공하는 제공자가 알려준 방식대로 데이터를 요청해야됩니다
 
-* 여기를 참고하세요
-* 
+# 아래의 페이지를 참고하세요
+  
 https://openweathermap.org/current
 
 k2c = lambda k : k - 273.15
